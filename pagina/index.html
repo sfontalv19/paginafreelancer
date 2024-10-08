@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Diseñador freelancer</title>
+    <link rel="icon" href="/img/conceptual-flat-design-icon-of-freelancer-vector.jpg" type="image/png">
     <meta name="robots" content="index, follow">                                    
     <meta name="theme-color" content="#097f">
     <link rel="preload" href="css/normalize.css">;
@@ -20,16 +22,19 @@
 
     <header>
         <h1 class="titulo">Sergio Fontalvo <span>Freelancer</span>
+
         </h1>
+        <h2>Desarrollador Full-Stack</h2>
 
     </header>
 
 <div class="nav-bg">
     <nav class ="navegacion-principal contenedor">
         <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
+        <a href="#quien" onclick="sobreMi()">Sobre Mi</a>
         <a href="#">Clientes</a>
-        <a href="#">Contactos</a>
+        <a href="#formulario" id="contactar"  onclick="dirigir()">
+            Contactos</a>
 
     </nav>
 </div>
@@ -51,13 +56,42 @@
             Barranquilla, Colombia </p>    
 
 
-        <a  class= boton> Contactar</a>
+        <a  class= boton id="contactar" onclick="dirigir()" > Contactar</a>
 
 
     </div>
 
 </section>
     </section>
+
+    <div class="quien" id="quien">
+        <h2>Quien soy</h2>
+        <div class="bloque2">
+            <img class="img-mia" src="/img/WhatsApp Image 2024-08-05 at 5.12.38 PM.jpeg" alt="">
+
+                <div>
+                    <a href="https://github.com/sfontalv19" target="_blank">
+                        <img src="/img/icons8-github-64.png" alt="">
+                        <p>tel: +57 300 350 8003 <br>
+        
+                            </p>
+                       
+                        <a href="https://www.instagram.com/sfontalv_19/profilecard/?igsh=YWVzc2Q5YjMzcTFh">
+                            <img src="/img/icons8-instagram-48 (1).png" alt="">
+                        </a>
+        
+                    </a>
+                </div>
+          
+
+            <p class="quien=p" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Eveniet iste facilis ipsum praesentium provident, <br> fuga architecto sequi accusamus facere eos, <br> culpa vitae,  <br> expedita nobis earum debitis quas ab voluptatibus. Nam.</p> 
+        </div>
+        
+    
+    </div>
+    <!-- proyectos -->
+
+  
 
 
 
@@ -161,7 +195,7 @@
 
         <h2>contacto</h2>
 
-        <form class="formulario">
+        <form class="formulario"  id="formulario" >
             <fieldset>
 
                 <legend>contactanos llenando todo los campos</legend>
@@ -220,7 +254,7 @@
     </footer>
 
 
-
+<script src="/pagina/script.js" ></script>
 
 </body>
 
