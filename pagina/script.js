@@ -29,3 +29,12 @@ window.addEventListener('blur', () => {
 window.addEventListener('focus', () => {
     document.title = previousTitle; 
 });
+
+
+
+
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.querySelector('.card-inner').classList.toggle('flipped');
+    });
+});
